@@ -4,8 +4,6 @@ bitgo -- https://github.com/BitGo/BitGoJS/tree/master/modules/express#cloning-th
 
 # Request and params
 
-In 
-
 1. POST -- /create/address
     Params: environment, access_token, currency, walletId, addressLabel
 
@@ -17,3 +15,7 @@ In
 
 4. POST -- /get/transaction
     Params: environment, access_token, currency, walletId, transferId
+
+
+
+cd bitgojs/modules/express

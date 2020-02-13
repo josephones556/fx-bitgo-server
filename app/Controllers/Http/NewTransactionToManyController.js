@@ -50,7 +50,8 @@ class NewTransactionToManyController {
             await wallet.sendMany(params).then(async (transaction) => {
 
                 return response.status(200).json({
-                    txid: transaction.txid,
+                    id: transaction.transfer.id,
+                    txid: transaction.transfer.txid,
                     status: transaction.status
                 })
 

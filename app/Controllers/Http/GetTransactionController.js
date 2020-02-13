@@ -36,6 +36,8 @@ class GetTransactionController {
             await wallet.getTransfer({ id: data.transferId }).then(function(transaction) {
                 
                 return response.status(200).json({
+                    coin: transaction.coin,
+                    id: transaction.id,
                     txid: transaction.txid,
                     confirmations: transaction.confirmations
                 })

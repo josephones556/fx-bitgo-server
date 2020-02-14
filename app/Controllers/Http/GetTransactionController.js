@@ -39,6 +39,8 @@ class GetTransactionController {
                     coin: transaction.coin,
                     id: transaction.id,
                     txid: transaction.txid,
+                    inputs: transaction.inputs,
+                    outputs: transaction.outputs,
                     confirmations: transaction.confirmations
                 })
 

@@ -38,10 +38,10 @@ class NewTransactionToManyController {
 
             let params = {
                 recipients: [{
-                    amount: data.amount1,
+                    amount: parseInt(data.amount1),
                     address: data.address1,
                 }, {
-                    amount: data.amount2,
+                    amount: parseInt(data.amount2),
                     address: data.address2,
                 }],
                 walletPassphrase: data.phrase

@@ -36,7 +36,7 @@ class NewTransactionController {
         await bitgo.coin(data.currency).wallets().get({ id: data.walletId }).then(async (wallet) => {
 
             let params = {
-                amount: data.amount * 1e8,
+                amount: data.amount,
                 address: data.address,
                 walletPassphrase: data.phrase
             };

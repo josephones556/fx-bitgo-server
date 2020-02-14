@@ -41,6 +41,8 @@ class NewTransactionController {
                 walletPassphrase: data.phrase
             };
 
+            return response.status(200).json(params);
+
             await wallet.send(params).then(async (transaction) => {
 
                 return response.status(200).json({
